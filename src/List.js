@@ -6,7 +6,7 @@ import './list.css'
 
 function Band() {
 
-    const info = data.map(( { band_name, formed, origin, fans}, ID ) => {
+    const info = data.map(( { band_name, formed, origin, fans,split}, ID ) => {
         return (
             <Detail 
                 id={ID}
@@ -14,6 +14,7 @@ function Band() {
                 formed={formed}
                 origin={origin}
                 fans={fans}
+                split={split}
             />
         )    
     })
@@ -23,10 +24,6 @@ function Band() {
           { info }  
         </div>
     )
-}
-
-function BandSplit() {
-    
 }
 
 export default Band
